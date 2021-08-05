@@ -42,8 +42,10 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'guard', '~> 2.18'
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   gem 'spring'
+  # Get better error formats
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
 end
 
 group :test do
@@ -57,8 +59,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-# Get better error formats
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
 
 # Bulma Scss Framework
 

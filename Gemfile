@@ -67,3 +67,5 @@ gem 'bulma-rails', '~> 0.9.1'
 # Simple Form
 
 gem 'simple_form', '~> 5.1'
+
+gem 'rails_12factor', '~> 0.0.3'
